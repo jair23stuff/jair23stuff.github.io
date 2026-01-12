@@ -7,7 +7,6 @@
     <h3>whats up losers</h3>
   </header>
 
-  <br>
 
   <h3>aw geez, it seems pretty cool to have full control over a website</h3>
 
