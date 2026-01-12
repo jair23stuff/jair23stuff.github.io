@@ -1,18 +1,19 @@
 
 </head>
+
 <body>
 
   <header>
     <h3>whats up losers</h3>
   </header>
-<br
-  <h3>    aw geez, it seems pretty cool to have full control over a wrbsite </h3>
-</br
+
+  <br>
+
+  <h3>aw geez, it seems pretty cool to have full control over a website</h3>
 
   <div>
-    <img scr="morty.jpg" /> 
+    <img src="morty.jpg" alt="morty">
   </div>
-  
 
 </body>
 </html>
