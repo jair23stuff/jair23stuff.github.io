@@ -5,14 +5,14 @@
   <header>
     <h3>whats up losers</h3>
   </header>
+<br
+  <h3>    aw geez, it seems pretty cool to have full control over a wrbsite </h3>
+</br
 
-  <!-- change only the text inside this div -->
-  <div id="post">
-    <h1> aw geez, it seems pretty cool to have full control over a wrbsite </h1>
+  <div>
+    <img scr="morty.jpg" /> 
   </div>
-
-  <footer>
-  </footer>
+  
 
 </body>
 </html>
