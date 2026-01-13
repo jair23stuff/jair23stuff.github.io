@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Layout</title>
+  <style>
+    :root {
+      /* Colors */
+      --pink: #b45aa8;
+      --blue: #2f6fb2; /* matching blue for top + bottom text */
+      --border: #000;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: var(--blue);
+    }
+
+    /* Top bar */
+    header {
+      background: var(--pink);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--blue);
+      font-size: 32px;
+    }
+
+    /* Main layout */
+    .container {
+      display: flex;
+      min-height: 70vh;
+    }
+
+    .left,
+    .right {
+      padding: 20px;
+      border-right: 3px solid var(--border);
+    }
+
+    .left {
+      flex: 2;
+    }
+
+    .right {
+      flex: 1;
+      border-right: none;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--blue);
+    }
+
+    /* Bottom text */
+    footer {
+      border-top: 3px solid var(--border);
+      padding: 15px;
+      text-align: center;
+      color: var(--blue);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jai’s Blog</h1>
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <h2>Blog Post</h2>
+      <p>
+        This is where your blog text goes. You can write posts, stories,
+        updates, or anything you want here.
+      </p>
+    </div>
+
+    <div class="right">
+      <h2>Play Order Info</h2>
+      <p>
+        Extra information, links, or notes can go in this sidebar.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    Bottom text — same blue as the top text
+  </footer>
+
+</body>
+</html>
