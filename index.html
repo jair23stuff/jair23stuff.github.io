@@ -3,70 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>jair stuff</title>
-<style>
-  :root {
-    /* your colors */
-  }
 
-  body {
-    /* body styles */
-  }
-
-  header {
-    /* header styles */
-  }
-
-  /* ... all your existing CSS ... */
-
-  footer {
-    border-top: 3px solid var(--border);
-    padding: 15px;
-    text-align: center;
-    color: var(--blue);
-  }
-
-  /* 👇 PASTE THE MOBILE CODE RIGHT HERE 👇 */
-
-  p, h3 {
-    line-height: 1.6;
-  }
-
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 24px;
+  <style>
+    :root {
+      /* Colors */
+      --pink: #b45aa8;
+      --blue: #2f6fb2;
+      --border: #000;
     }
 
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: var(--blue);
+    }
+
+    /* Top bar */
+    header {
+      background: var(--pink);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--blue);
+      font-size: 32px;
+    }
+
+    /* Main layout (desktop stays the same) */
     .container {
-      flex-direction: column;
+      display: flex;
+      min-height: 70vh;
     }
 
     .left,
     .right {
-      border-right: none;
-      border-bottom: 3px solid var(--border);
-      padding: 15px;
+      padding: 20px;
+      border-right: 3px solid var(--border);
+    }
+
+    .left {
+      flex: 2;
     }
 
     .right {
-      border-bottom: none;
+      flex: 1;
+      border-right: none;
     }
 
-    h2 {
-      font-size: 20px;
+    h2, h3 {
+      margin-top: 0;
+      color: var(--blue);
     }
 
-    h3 {
-      font-size: 16px;
-      font-weight: normal;
-    }
-
+    /* Bottom text */
     footer {
-      font-size: 14px;
+      border-top: 3px solid var(--border);
+      padding: 15px;
+      text-align: center;
+      color: var(--blue);
     }
-  }
-</style>
 
+    /* -------------------- */
+    /* Mobile only changes */
+    /* -------------------- */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        border-right: none;
+      }
+
+      .left {
+        border-bottom: 3px solid var(--border);
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <header>
@@ -76,20 +96,36 @@
   <div class="container">
     <div class="left">
       <h2>greed</h2>
-      <h3>everyone has greed, and i feel like it will be the death of us all, we all have something we have greed for, examples in history show this very clearly, rulers would conquer land because they want more power, and in the procces many people die, many civilizations die, and many cultures die, and we are getting to the point where people are greedy over the natural recouces, like land(still), and who uses what, who uses the space to fuel the ai data centers, who uses the fuel to destroy natural habibtas, and so on, but we will get to the point where we cant do anything to stop it, we have to "trust" the politiicans to do something right, but even then, all they care about is there personal gain, and thats really messed up(duh). so the world will spiral into a deep depresion were the human species will die out because of our stupid mistakes and we are slowly getting there. </h3>
+      <h3>
+        everyone has greed, and i feel like it will be the death of us all, we all
+        have something we have greed for, examples in history show this very clearly,
+        rulers would conquer land because they want more power, and in the procces many
+        people die, many civilizations die, and many cultures die, and we are getting
+        to the point where people are greedy over the natural recouces, like land(still),
+        and who uses what, who uses the space to fuel the ai data centers, who uses the
+        fuel to destroy natural habibtas, and so on, but we will get to the point where
+        we cant do anything to stop it, we have to "trust" the politiicans to do something
+        right, but even then, all they care about is there personal gain, and thats really
+        messed up(duh). so the world will spiral into a deep depresion were the human
+        species will die out because of our stupid mistakes and we are slowly getting there.
+      </h3>
     </div>
 
     <div class="right">
       <h2>About</h2>
       <p>
-        wazzup dudes, this welcome to my blog d: i wanna talk about random stuff, from things that happend 1 day, to ongoing events, i feel like people should be able to spread there thoughts freely, so all of my code is on github, free for use, and its pretty easy to change understand so do ya thing :D
+        wazzup dudes, this welcome to my blog d: i wanna talk about random stuff, from
+        things that happend 1 day, to ongoing events, i feel like people should be able
+        to spread there thoughts freely, so all of my code is on github, free for use,
+        and its pretty easy to change understand so do ya thing :D
       </p>
     </div>
   </div>
 
   <footer>
-    jair stuff d:    
+    jair stuff d:
   </footer>
 
 </body>
 </html>
+
