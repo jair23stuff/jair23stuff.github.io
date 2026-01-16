@@ -3,69 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>jair stuff</title>
-  <style>
-    :root {
-      /* Colors */
-      --pink: #b45aa8;
-      --blue: #2f6fb2; /* matching blue for top + bottom text */
-      --border: #000;
-    }
+<style>
+  :root {
+    /* your colors */
+  }
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
-      color: var(--blue);
-    }
+  body {
+    /* body styles */
+  }
 
-    /* Top bar */
-    header {
-      background: var(--pink);
-      padding: 20px;
-      text-align: center;
-      border-bottom: 3px solid var(--border);
-    }
+  header {
+    /* header styles */
+  }
 
+  /* ... all your existing CSS ... */
+
+  footer {
+    border-top: 3px solid var(--border);
+    padding: 15px;
+    text-align: center;
+    color: var(--blue);
+  }
+
+  /* 👇 PASTE THE MOBILE CODE RIGHT HERE 👇 */
+
+  p, h3 {
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
     header h1 {
-      margin: 0;
-      color: var(--blue);
-      font-size: 32px;
+      font-size: 24px;
     }
 
-    /* Main layout */
     .container {
-      display: flex;
-      min-height: 70vh;
+      flex-direction: column;
     }
 
     .left,
     .right {
-      padding: 20px;
-      border-right: 3px solid var(--border);
-    }
-
-    .left {
-      flex: 2;
+      border-right: none;
+      border-bottom: 3px solid var(--border);
+      padding: 15px;
     }
 
     .right {
-      flex: 1;
-      border-right: none;
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 20px;
     }
 
     h3 {
-      margin-top: 0;
-      color: var(--blue);
+      font-size: 16px;
+      font-weight: normal;
     }
 
-    /* Bottom text */
     footer {
-      border-top: 3px solid var(--border);
-      padding: 15px;
-      text-align: center;
-      color: var(--blue);
+      font-size: 14px;
     }
-  </style>
+  }
+</style>
+
 </head>
 <body>
 
