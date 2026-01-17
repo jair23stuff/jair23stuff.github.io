@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Posts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>All Blog Posts</h1>
+  <nav>
+    <a href="index.html" class="nav-btn">← Back</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="left">
+
+    <button class="nav-btn" onclick="toggleSort()">
+      Toggle Order
+    </button>
+
+    <div id="posts">
+
+      <div class="post" data-date="2024-01-01">
+        <h2>example post</h2>
+        <p class="date">January 1, 2024</p>
+      </div>
+
+      <div class="post" data-date="2024-03-05">
+        <h2>greed</h2>
+        <p class="date">March 5, 2024</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+let newestFirst = false;
+
+function toggleSort() {
+  const postsContainer = document.getElementById("posts");
+  const posts = Array.from(postsContainer.children);
+
+  posts.sort((a, b) => {
+    const dateA = new Date(a.dataset.date);
+    const dateB = new Date(b.dataset.date);
+    return newestFirst ? dateA - dateB : dateB - dateA;
+  });
+
+  newestFirst = !newestFirst;
+  posts.forEach(post => postsContainer.appendChild(post));
+}
+</script>
+
+</body>
+</html>
